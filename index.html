@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian Legal Consultants</title>
+  <meta name="description" content="Professional legal consultancy and documentation services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 950: "#0A1628", 900: "#0F1F38", 800: "#16294A", 700: "#1E3A5F" },
+            gold: { 500: "#A8863E" },
+            ink: "#1C2230",
+            paper: "#FAFAF8",
+            line: "#E4E2DC",
+          },
+          fontFamily: {
+            serif: ["'Playfair Display'", "Georgia", "serif"],
+            sans: ["'Inter'", "system-ui", "sans-serif"],
+          },
+          maxWidth: { content: "1180px" },
+          letterSpacing: { wide2: "0.08em" },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-sans antialiased bg-paper text-ink">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-line">
+    <div class="container-content flex items-center justify-between h-20">
+      <a href="index.html" class="font-serif text-xl md:text-2xl text-navy-900 tracking-wide">
+        Meridian Legal Consultants
+      </a>
+      <nav class="hidden md:flex items-center gap-10">
+        <a href="index.html" class="text-sm font-medium text-navy-700">Home</a>
+        <a href="services.html" class="text-sm font-medium text-ink hover:text-navy-700 transition-colors">Services</a>
+        <a href="about.html" class="text-sm font-medium text-ink hover:text-navy-700 transition-colors">About</a>
+        <a href="contact.html" class="text-sm font-medium text-ink hover:text-navy-700 transition-colors">Contact</a>
+        <a href="contact.html" class="btn-primary">Get in Touch</a>
+      </nav>
+      <button id="menu-btn" aria-label="Toggle menu" class="md:hidden p-2 text-navy-900">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-line bg-paper">
+      <nav class="container-content flex flex-col py-6 gap-5">
+        <a href="index.html" class="text-base font-medium">Home</a>
+        <a href="services.html" class="text-base font-medium">Services</a>
+        <a href="about.html" class="text-base font-medium">About</a>
+        <a href="contact.html" class="text-base font-medium">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="border-b border-line">
+    <div class="container-content py-24 md:py-32">
+      <p class="eyebrow mb-5">Legal Consultancy &amp; Documentation</p>
+      <h1 class="font-serif text-4xl md:text-6xl text-navy-900 leading-tight max-w-3xl">
+        Clear legal guidance, handled with precision and care.
+      </h1>
+      <p class="mt-6 text-lg text-ink/70 max-w-2xl leading-relaxed">
+        We help individuals and businesses navigate legal documentation and
+        consultancy with a straightforward, dependable process.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="contact.html" class="btn-primary">Get in Touch</a>
+        <a href="services.html" class="btn-secondary">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="container-content py-24">
+    <div class="max-w-2xl mb-14">
+      <p class="eyebrow mb-3">What We Do</p>
+      <h2 class="font-serif text-3xl md:text-4xl text-navy-900 leading-tight">Key services for individuals and businesses</h2>
+      <p class="mt-4 text-base text-ink/70 leading-relaxed">Focused, dependable support across the legal documentation you're most likely to need.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="border border-line p-8 hover:border-navy-700 transition-colors">
+        <h3 class="font-serif text-xl text-navy-900 mb-3">Rent Agreements</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">Drafting and registration of legally compliant rental and lease agreements.</p>
+      </div>
+      <div class="border border-line p-8 hover:border-navy-700 transition-colors">
+        <h3 class="font-serif text-xl text-navy-900 mb-3">Aadhaar Card Services</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">Assistance with Aadhaar enrolment, updates, and correction services.</p>
+      </div>
+      <div class="border border-line p-8 hover:border-navy-700 transition-colors">
+        <h3 class="font-serif text-xl text-navy-900 mb-3">Legal Documentation</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">Preparation and vetting of contracts, affidavits, and official documents.</p>
+      </div>
+      <div class="border border-line p-8 hover:border-navy-700 transition-colors">
+        <h3 class="font-serif text-xl text-navy-900 mb-3">General Consultancy</h3>
+        <p class="text-sm text-ink/70 leading-relaxed">Guidance on regulatory, compliance, and day-to-day legal matters.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="border-t border-line bg-navy-950">
+    <div class="container-content py-20 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+      <h2 class="font-serif text-2xl md:text-3xl text-paper max-w-lg">Ready to discuss your legal requirements?</h2>
+      <a href="contact.html" class="inline-flex items-center justify-center px-7 py-3.5 bg-paper text-navy-900 text-sm font-medium tracking-wide2 uppercase hover:bg-gold-500 hover:text-paper transition-colors">
+        Contact Us
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-line bg-navy-950 text-paper/80">
+    <div class="container-content py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <p class="font-serif text-xl text-paper mb-3">Meridian Legal Consultants</p>
+        <p class="text-sm leading-relaxed text-paper/60 max-w-xs">Reliable legal consultancy and documentation services for individuals and businesses.</p>
+      </div>
+      <div>
+        <p class="eyebrow text-paper/50 mb-4">Navigate</p>
+        <div class="flex flex-col gap-2 text-sm">
+          <a href="index.html" class="hover:text-paper transition-colors">Home</a>
+          <a href="services.html" class="hover:text-paper transition-colors">Services</a>
+          <a href="about.html" class="hover:text-paper transition-colors">About</a>
+          <a href="contact.html" class="hover:text-paper transition-colors">Contact</a>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow text-paper/50 mb-4">Contact</p>
+        <div class="flex flex-col gap-2 text-sm text-paper/70">
+          <span>info@meridianlegal.example</span>
+          <span>+91 00000 00000</span>
+          <span>Pune, Maharashtra, India</span>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-paper/10">
+      <div class="container-content py-6 text-xs text-paper/40">
+        © <span id="year"></span> Meridian Legal Consultants. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/contact.js"></script>
+</body>
+</html>
