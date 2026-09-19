@@ -1,61 +1,180 @@
+/* ============================================================
+   MERIDIAN LEGAL CONSULTANTS — CLEAN BLUE & WHITE STYLESHEET
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #1e293b;
+  background-color: #ffffff;
+}
+
+/* Layout */
 .container-content {
-  max-width: 1180px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @media (min-width: 768px) {
   .container-content {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
+/* Section Padds */
+.section-py {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+/* Color Sections */
+.bg-light {
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.bg-blue-dark,
+.bg-dark,
+.cta-section {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.bg-blue-dark h1, .bg-blue-dark h2, .bg-blue-dark h3, .bg-blue-dark h4,
+.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4,
+.cta-section h1, .cta-section h2, .cta-section h3 {
+  color: #ffffff;
+}
+
+.bg-blue-dark p, .bg-dark p, .cta-section p {
+  color: #dbeafe;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #0f172a;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1d4ed8;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.bg-blue-dark .eyebrow,
+.cta-section .eyebrow {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.875rem 1.75rem;
-  background-color: #0F1F38;
-  color: #FAFAF8;
+  padding: 0.65rem 1.35rem;
+  background-color: #2563eb;
+  color: #ffffff !important;
   font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease;
+  font-weight: 600;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
 }
+
 .btn-primary:hover {
-  background-color: #1E3A5F;
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  text-decoration: none;
 }
 
 .btn-secondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.875rem 1.75rem;
-  border: 1px solid #0F1F38;
-  color: #0F1F38;
+  padding: 0.65rem 1.35rem;
+  background-color: #ffffff;
+  color: #2563eb !important;
   font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  font-weight: 600;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
 }
+
 .btn-secondary:hover {
-  background-color: #0F1F38;
-  color: #FAFAF8;
+  background-color: #eff6ff;
+  text-decoration: none;
 }
 
-.eyebrow {
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #A8863E;
+/* Cards */
+.card,
+.service-card,
+.team-card,
+.testimonial-card,
+.info-card,
+.form-card,
+.pricing-card,
+.doc-card,
+.step-card {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
-html {
-  scroll-behavior: smooth;
+.card-dark {
+  background-color: #1e3a8a;
+  border: 1px solid #3b82f6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  color: #ffffff;
+}
+
+.card-dark h3 {
+  color: #ffffff;
+}
+
+.card-dark p {
+  color: #dbeafe;
+}
+
+/* ZERO ANIMATION OVERRIDE */
+*, *::before, *::after {
+  transition: none !important;
+  animation: none !important;
+  box-shadow: none !important;
+}
+
+.reveal, .fade-up, .fade-up-2, .fade-up-3, .hero-float {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
 }

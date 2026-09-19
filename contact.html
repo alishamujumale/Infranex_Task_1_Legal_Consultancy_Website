@@ -3,153 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Meridian Legal Consultants</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <title>Contact Us — Meridian Legal Consultants</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: { 950: "#0A1628", 900: "#0F1F38", 800: "#16294A", 700: "#1E3A5F" },
-            gold: { 500: "#A8863E" },
-            ink: "#1C2230",
-            paper: "#FAFAF8",
-            line: "#E4E2DC",
-          },
-          fontFamily: {
-            serif: ["'Playfair Display'", "Georgia", "serif"],
-            sans: ["'Inter'", "system-ui", "sans-serif"],
-          },
-          maxWidth: { content: "1180px" },
-          letterSpacing: { wide2: "0.08em" },
-        },
-      },
-    };
-  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-sans antialiased bg-paper text-ink">
-
-  <header class="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-line">
-    <div class="container-content flex items-center justify-between h-20">
-      <a href="index.html" class="font-serif text-xl md:text-2xl text-navy-900 tracking-wide">
-        Meridian Legal Consultants
+<body class="bg-white text-gray-800">
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <div class="container-content flex items-center justify-between h-16 md:h-20">
+      <a href="index.html" class="font-serif text-lg md:text-xl font-bold text-blue-900 tracking-wide flex items-center gap-2">
+        <span class="w-8 h-8 bg-blue-700 text-white rounded flex items-center justify-center font-sans text-sm font-bold">L</span>
+        Meridian Legal
       </a>
-      <nav class="hidden md:flex items-center gap-10">
-        <a href="index.html" class="text-sm font-medium text-ink hover:text-navy-700 transition-colors">Home</a>
-        <a href="services.html" class="text-sm font-medium text-ink hover:text-navy-700 transition-colors">Services</a>
-        <a href="about.html" class="text-sm font-medium text-ink hover:text-navy-700 transition-colors">About</a>
-        <a href="contact.html" class="text-sm font-medium text-navy-700">Contact</a>
-        <a href="contact.html" class="btn-primary">Get in Touch</a>
+      <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
+        <a href="index.html" class="text-gray-700 hover:text-blue-700">Home</a>
+        <a href="trust.html" class="text-gray-700 hover:text-blue-700">Trust</a>
+        <a href="how-it-works.html" class="text-gray-700 hover:text-blue-700">How It Works</a>
+        <a href="services.html" class="text-gray-700 hover:text-blue-700">Services</a>
+        <a href="why-us.html" class="text-gray-700 hover:text-blue-700">Why Us</a>
+        <a href="pricing.html" class="text-gray-700 hover:text-blue-700">Pricing</a>
+        <a href="documents.html" class="text-gray-700 hover:text-blue-700">Documents</a>
+        <a href="compliance.html" class="text-gray-700 hover:text-blue-700">Compliance</a>
+        <a href="faq.html" class="text-gray-700 hover:text-blue-700">FAQs</a>
+        <a href="contact.html" class="btn-primary">Contact Us</a>
       </nav>
-      <button id="menu-btn" aria-label="Toggle menu" class="md:hidden p-2 text-navy-900">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
-        </svg>
+      <button id="menu-btn" class="lg:hidden p-2 text-blue-900 border border-gray-300 rounded">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-line bg-paper">
-      <nav class="container-content flex flex-col py-6 gap-5">
-        <a href="index.html" class="text-base font-medium">Home</a>
-        <a href="services.html" class="text-base font-medium">Services</a>
-        <a href="about.html" class="text-base font-medium">About</a>
-        <a href="contact.html" class="text-base font-medium">Contact</a>
-      </nav>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200 bg-white py-4 container-content grid grid-cols-2 gap-2 text-sm">
+      <a href="index.html" class="p-2 border rounded">Home</a>
+      <a href="trust.html" class="p-2 border rounded">Trust & Security</a>
+      <a href="how-it-works.html" class="p-2 border rounded">How It Works</a>
+      <a href="services.html" class="p-2 border rounded">Services</a>
+      <a href="why-us.html" class="p-2 border rounded">Why Us</a>
+      <a href="pricing.html" class="p-2 border rounded">Pricing</a>
+      <a href="documents.html" class="p-2 border rounded">Documents</a>
+      <a href="compliance.html" class="p-2 border rounded">Compliance</a>
+      <a href="faq.html" class="p-2 border rounded">FAQs</a>
+      <a href="contact.html" class="p-2 border rounded bg-blue-700 text-white text-center col-span-2 font-bold">Contact Us</a>
     </div>
   </header>
 
-  <section class="container-content py-24">
-    <div class="max-w-2xl mb-14">
-      <p class="eyebrow mb-3">Contact</p>
-      <h1 class="font-serif text-3xl md:text-4xl text-navy-900 leading-tight">Get in touch</h1>
-      <p class="mt-4 text-base text-ink/70 leading-relaxed">Send us a message and our team will get back to you shortly.</p>
+  <section class="bg-blue-900 text-white py-16">
+    <div class="container-content text-center max-w-2xl mx-auto">
+      <span class="eyebrow bg-blue-800 text-white border-blue-700">Final CTA &amp; Support</span>
+      <h1 class="font-serif text-3xl md:text-5xl text-white font-bold mt-3 mb-4">Contact Meridian Legal</h1>
+      <p class="text-blue-200 text-base">Get in touch with our Pune legal team for fast documentation assistance.</p>
     </div>
+  </section>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-      <div class="md:col-span-2">
-        <form id="contact-form" class="flex flex-col gap-6" novalidate>
-          <div>
-            <label class="block text-sm font-medium text-ink mb-2" for="name">Full Name</label>
-            <input id="name" name="name" type="text" class="w-full border border-line bg-paper px-4 py-3 text-sm text-ink focus:outline-none focus:border-navy-700" placeholder="Your full name">
-            <p class="error-text mt-1 text-xs text-red-600 hidden" data-error-for="name"></p>
+  <section class="py-16 bg-white">
+    <div class="container-content grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="font-serif text-2xl text-blue-950 font-bold mb-4">Office &amp; Contact Information</h2>
+        <div class="space-y-4 text-sm text-gray-700 mb-8">
+          <div class="p-4 border border-gray-300 rounded">
+            <strong>📍 Office Address:</strong><br>
+            123 Legal Street, Shivaji Nagar, Pune, Maharashtra 411005
           </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label class="block text-sm font-medium text-ink mb-2" for="email">Email</label>
-              <input id="email" name="email" type="email" class="w-full border border-line bg-paper px-4 py-3 text-sm text-ink focus:outline-none focus:border-navy-700" placeholder="you@example.com">
-              <p class="error-text mt-1 text-xs text-red-600 hidden" data-error-for="email"></p>
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-ink mb-2" for="phone">Phone</label>
-              <input id="phone" name="phone" type="tel" class="w-full border border-line bg-paper px-4 py-3 text-sm text-ink focus:outline-none focus:border-navy-700" placeholder="+91 00000 00000">
-              <p class="error-text mt-1 text-xs text-red-600 hidden" data-error-for="phone"></p>
-            </div>
+          <div class="p-4 border border-gray-300 rounded">
+            <strong>📞 Phone &amp; WhatsApp:</strong><br>
+            +91 00000 00000 (Mon – Sat: 9:00 AM – 7:00 PM)
           </div>
-
-          <div>
-            <label class="block text-sm font-medium text-ink mb-2" for="message">Message</label>
-            <textarea id="message" name="message" rows="5" class="w-full border border-line bg-paper px-4 py-3 text-sm text-ink focus:outline-none focus:border-navy-700" placeholder="Tell us briefly what you need help with"></textarea>
-            <p class="error-text mt-1 text-xs text-red-600 hidden" data-error-for="message"></p>
+          <div class="p-4 border border-gray-300 rounded">
+            <strong>✉️ Email:</strong><br>
+            info@meridianlegal.example
           </div>
-
-          <button type="submit" id="submit-btn" class="btn-primary w-full md:w-fit disabled:opacity-60">Send Message</button>
-
-          <p id="success-msg" class="text-sm text-green-700 hidden">Thank you. Your message has been sent — we'll be in touch shortly.</p>
-          <p id="error-msg" class="text-sm text-red-600 hidden">Something went wrong. Please try again in a moment.</p>
-        </form>
+        </div>
       </div>
 
-      <div class="space-y-8">
-        <div>
-          <p class="eyebrow mb-2">Email</p>
-          <p class="text-sm text-ink/70">info@meridianlegal.example</p>
-        </div>
-        <div>
-          <p class="eyebrow mb-2">Phone</p>
-          <p class="text-sm text-ink/70">+91 00000 00000</p>
-        </div>
-        <div>
-          <p class="eyebrow mb-2">Office</p>
-          <p class="text-sm text-ink/70">Pune, Maharashtra, India</p>
-        </div>
+      <div class="card">
+        <h2 class="font-serif text-xl font-bold text-blue-950 mb-4">Send An Inquiry</h2>
+        <form id="contact-form" action="/api/contact" method="POST" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1">Full Name *</label>
+            <input type="text" name="name" required class="w-full p-2.5 border border-gray-300 rounded text-sm outline-none" placeholder="Your Name">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1">Phone Number *</label>
+            <input type="tel" name="phone" required class="w-full p-2.5 border border-gray-300 rounded text-sm outline-none" placeholder="+91 00000 00000">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1">Select Service *</label>
+            <select name="service" class="w-full p-2.5 border border-gray-300 rounded text-sm outline-none">
+              <option>Rent Agreement Registration</option>
+              <option>Aadhaar Card Service</option>
+              <option>Legal Documentation / Affidavit</option>
+              <option>General Legal Consultation</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-gray-700 mb-1">Message</label>
+            <textarea name="message" rows="3" class="w-full p-2.5 border border-gray-300 rounded text-sm outline-none" placeholder="Details..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary w-full text-center">Submit Message</button>
+        </form>
       </div>
     </div>
   </section>
 
-  <footer class="border-t border-line bg-navy-950 text-paper/80">
-    <div class="container-content py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div>
-        <p class="font-serif text-xl text-paper mb-3">Meridian Legal Consultants</p>
-        <p class="text-sm leading-relaxed text-paper/60 max-w-xs">Reliable legal consultancy and documentation services for individuals and businesses.</p>
-      </div>
-      <div>
-        <p class="eyebrow text-paper/50 mb-4">Navigate</p>
-        <div class="flex flex-col gap-2 text-sm">
-          <a href="index.html" class="hover:text-paper transition-colors">Home</a>
-          <a href="services.html" class="hover:text-paper transition-colors">Services</a>
-          <a href="about.html" class="hover:text-paper transition-colors">About</a>
-          <a href="contact.html" class="hover:text-paper transition-colors">Contact</a>
-        </div>
-      </div>
-      <div>
-        <p class="eyebrow text-paper/50 mb-4">Contact</p>
-        <div class="flex flex-col gap-2 text-sm text-paper/70">
-          <span>info@meridianlegal.example</span>
-          <span>+91 00000 00000</span>
-          <span>Pune, Maharashtra, India</span>
-        </div>
-      </div>
-    </div>
-    <div class="border-t border-paper/10">
-      <div class="container-content py-6 text-xs text-paper/40">
-        © <span id="year"></span> Meridian Legal Consultants. All rights reserved.
-      </div>
+  <footer class="bg-blue-950 text-white border-t border-blue-900 py-12">
+    <div class="container-content text-center text-sm text-blue-200">
+      <p>© Meridian Legal Consultants. All rights reserved.</p>
     </div>
   </footer>
-
-  <script src="js/contact.js"></script>
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+  </script>
 </body>
 </html>
