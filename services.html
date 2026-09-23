@@ -4,81 +4,302 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Services — Meridian Legal Consultants</title>
+  <meta name="description" content="Comprehensive legal documentation services including rent agreements, Aadhaar updates, affidavits, notary, and power of attorney.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-white text-gray-800">
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
-    <div class="container-content flex items-center justify-between h-16 md:h-20">
-      <a href="index.html" class="font-serif text-lg md:text-xl font-bold text-blue-900 tracking-wide flex items-center gap-2">
-        <span class="w-8 h-8 bg-blue-700 text-white rounded flex items-center justify-center font-sans text-sm font-bold">L</span>
-        Meridian Legal
+<body class="bg-white text-slate-800">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="container-content flex items-center justify-between" style="height: 70px;">
+      <a href="index.html" class="flex items-center gap-2.5 no-underline">
+        <span class="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center text-sm font-bold shadow-sm">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </span>
+        <span class="text-xl font-bold text-slate-900 tracking-tight" style="font-family: var(--font-serif);">Meridian Legal</span>
       </a>
-      <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
-        <a href="index.html" class="text-gray-700 hover:text-blue-700">Home</a>
-        <a href="trust.html" class="text-gray-700 hover:text-blue-700">Trust</a>
-        <a href="how-it-works.html" class="text-gray-700 hover:text-blue-700">How It Works</a>
-        <a href="services.html" class="text-blue-700 font-bold">Services</a>
-        <a href="why-us.html" class="text-gray-700 hover:text-blue-700">Why Us</a>
-        <a href="pricing.html" class="text-gray-700 hover:text-blue-700">Pricing</a>
-        <a href="documents.html" class="text-gray-700 hover:text-blue-700">Documents</a>
-        <a href="compliance.html" class="text-gray-700 hover:text-blue-700">Compliance</a>
-        <a href="faq.html" class="text-gray-700 hover:text-blue-700">FAQs</a>
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Home</a>
+        <a href="trust.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Trust</a>
+        <a href="how-it-works.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">How It Works</a>
+        <a href="services.html" class="text-sm font-semibold text-blue-700 px-3.5 py-1.5 rounded-full bg-blue-50">Services</a>
+        <a href="why-us.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Why Us</a>
+        <a href="pricing.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Pricing</a>
+        <a href="documents.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Documents</a>
+        <a href="compliance.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Compliance</a>
+        <a href="faq.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">FAQs</a>
+        <a href="contact.html" class="btn-primary ml-3" style="padding: 9px 18px; font-size: 13.5px;">Contact Us</a>
       </nav>
-      <button id="menu-btn" class="lg:hidden p-2 text-blue-900 border border-gray-300 rounded">
+
+      <button id="menu-btn" class="lg:hidden p-2 text-slate-700 border border-slate-300 rounded-lg" aria-label="Open Menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200 bg-white py-4 container-content grid grid-cols-2 gap-2 text-sm">
-      <a href="index.html" class="p-2 border rounded">Home</a>
-      <a href="trust.html" class="p-2 border rounded">Trust & Security</a>
-      <a href="how-it-works.html" class="p-2 border rounded">How It Works</a>
-      <a href="services.html" class="p-2 border rounded text-blue-700 font-bold bg-blue-50">Services</a>
-      <a href="why-us.html" class="p-2 border rounded">Why Us</a>
-      <a href="pricing.html" class="p-2 border rounded">Pricing</a>
-      <a href="documents.html" class="p-2 border rounded">Documents</a>
-      <a href="compliance.html" class="p-2 border rounded">Compliance</a>
-      <a href="faq.html" class="p-2 border rounded">FAQs</a>
-      <a href="contact.html" class="p-2 border rounded bg-blue-700 text-white text-center col-span-2 font-bold">Contact Us</a>
+
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white">
+      <nav class="container-content py-3.5 grid grid-cols-2 gap-2 text-sm">
+        <a href="index.html" class="p-2.5 border rounded-lg text-slate-700">Home</a>
+        <a href="trust.html" class="p-2.5 border rounded-lg text-slate-700">Trust &amp; Security</a>
+        <a href="how-it-works.html" class="p-2.5 border rounded-lg text-slate-700">How It Works</a>
+        <a href="services.html" class="p-2.5 border rounded-lg text-blue-700 font-bold bg-blue-50">Services</a>
+        <a href="why-us.html" class="p-2.5 border rounded-lg text-slate-700">Why Us</a>
+        <a href="pricing.html" class="p-2.5 border rounded-lg text-slate-700">Pricing</a>
+        <a href="documents.html" class="p-2.5 border rounded-lg text-slate-700">Documents</a>
+        <a href="compliance.html" class="p-2.5 border rounded-lg text-slate-700">Compliance</a>
+        <a href="faq.html" class="p-2.5 border rounded-lg text-slate-700">FAQs</a>
+        <a href="contact.html" class="p-2.5 border rounded-lg bg-blue-600 text-white text-center col-span-2 font-bold">Contact Us</a>
+      </nav>
     </div>
   </header>
 
-  <section class="bg-blue-50 py-16 border-b border-blue-100">
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container-content">
+      <span class="badge-pill badge-pill-dark mb-3">
+        <span class="badge-dot"></span>
+        Legal Documentation Solutions
+      </span>
+      <h1>Our Legal Services</h1>
+      <p>Expert legal documentation, government registration, and consultancy services designed for complete compliance and absolute convenience.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="section-pad bg-slate-50 border-b border-slate-200">
+    <div class="container-content">
+      <div class="section-header">
+        <span class="eyebrow">Comprehensive Practice Areas</span>
+        <h2 class="section-title">What We Can Do for You</h2>
+        <p class="section-subtitle">Every service is executed with statutory rigor, transparent pricing, and personalized support.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- 1. Rent Agreements -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-2">Rent Agreements</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Leave and License agreements, residential tenancies, commercial property leases, and official renewal addendums registered with the IGR Maharashtra portal.</p>
+            <ul class="text-xs space-y-2 text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Residential 11-Month Leases</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Commercial Office &amp; Retail</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Doorstep Biometric Support</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-primary w-full text-center">Request Service</a>
+        </div>
+
+        <!-- 2. Aadhaar Services -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><line x1="15" y1="8" x2="17" y2="8"></line><line x1="15" y1="12" x2="17" y2="12"></line><line x1="7" y1="16" x2="17" y2="16"></line></svg>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-2">Aadhaar Card Services</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Complete guidance for updating rental addresses on your Aadhaar card using a valid registered rent agreement, plus enrolment and correction coordination.</p>
+            <ul class="text-xs space-y-2 text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Address Change via Rent Agreement</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Demographic Update Assistance</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>UIDAI Portal Appointment Booking</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-primary w-full text-center">Request Service</a>
+        </div>
+
+        <!-- 3. Legal Documentation -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v18M3 9l9-6 9 6M3 9v6l9 6 9-6V9"></path></svg>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-2">Legal Documentation</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Professional drafting and execution of affidavits, name change notices, gazette publications, indemnity bonds, and general statutory undertakings.</p>
+            <ul class="text-xs space-y-2 text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>General &amp; Financial Affidavits</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Indemnity &amp; Guarantee Bonds</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Name Change Gazette Notifications</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-primary w-full text-center">Request Service</a>
+        </div>
+
+        <!-- 4. Notary Services -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-2">Notary Services</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Government-authorized notary public attestation for affidavits, declarations, loan agreements, visa applications, and international travel authorizations.</p>
+            <ul class="text-xs space-y-2 text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Affidavit &amp; Agreement Notarization</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>True Copy Attestation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Apostille &amp; Authentication</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-primary w-full text-center">Request Service</a>
+        </div>
+
+        <!-- 5. Power of Attorney -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M12 18h6"></path><path d="M12 14h6"></path><path d="M6 18h2"></path><path d="M6 14h2"></path></svg>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-2">Power of Attorney</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Comprehensive drafting, advocate vetting, and formal registration of General Power of Attorney (GPA) and Special Power of Attorney (SPA) for real estate and banking.</p>
+            <ul class="text-xs space-y-2 text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>General Power of Attorney (GPA)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Special Power of Attorney (SPA)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>NRI Power of Attorney Attestation</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-primary w-full text-center">Request Service</a>
+        </div>
+
+        <!-- 6. General Consultancy -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <div class="icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mb-2">General Legal Consultancy</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">Actionable legal advisory for property disputes, tenancy terminations, security deposit recovery, title scrutiny, and contractual risk assessments.</p>
+            <ul class="text-xs space-y-2 text-slate-600 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Tenancy &amp; Eviction Guidance</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Deposit Recovery Mediation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Document &amp; Title Verification</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-primary w-full text-center">Request Service</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad bg-blue-dark-section">
     <div class="container-content text-center max-w-2xl mx-auto">
-      <span class="eyebrow">Legal Consultancy</span>
-      <h1 class="font-serif text-3xl md:text-5xl text-blue-950 font-bold mt-3 mb-4">Our Services</h1>
-      <p class="text-gray-600 text-base">Comprehensive documentation and legal assistance for individuals and businesses.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Need a Custom Legal Document?</h2>
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8">Speak directly with our legal advisory team. We draft tailored agreements and documentation according to your specific requirements.</p>
+      <a href="contact.html" class="btn-primary" style="background: #ffffff; color: var(--blue-950) !important; border-color: #ffffff;">
+        <span>Contact Our Team</span>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
   </section>
 
-  <section class="py-16 bg-white">
-    <div class="container-content grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="card">
-        <h3 class="font-bold text-lg text-blue-900 mb-2">Rent Agreements</h3>
-        <p class="text-sm text-gray-600 mb-4">Leave &amp; License registration, residential rental agreements, commercial property leases.</p>
-        <a href="contact.html" class="btn-primary w-full text-center text-xs">Request Service</a>
-      </div>
-      <div class="card">
-        <h3 class="font-bold text-lg text-blue-900 mb-2">Aadhaar Services</h3>
-        <p class="text-sm text-gray-600 mb-4">Assistance with Aadhaar enrolment appointments, address updates, and correction forms.</p>
-        <a href="contact.html" class="btn-primary w-full text-center text-xs">Request Service</a>
-      </div>
-      <div class="card">
-        <h3 class="font-bold text-lg text-blue-900 mb-2">Legal Documentation</h3>
-        <p class="text-sm text-gray-600 mb-4">Affidavits, Power of Attorney (POA), Indemnity Bonds, and Contract Vetting.</p>
-        <a href="contact.html" class="btn-primary w-full text-center text-xs">Request Service</a>
+  <!-- FOOTER -->
+  <footer class="site-footer border-t border-slate-800">
+    <div class="container-content py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <p class="text-lg font-bold text-white mb-2" style="font-family: var(--font-serif);">Meridian Legal</p>
+          <p class="text-sm text-slate-400 leading-relaxed">Trusted, government-authorized online rent agreements and documentation consultancy.</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Quick Links</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="trust.html" class="hover:text-white">Trust &amp; Security</a></li>
+            <li><a href="how-it-works.html" class="hover:text-white">How It Works</a></li>
+            <li><a href="services.html" class="hover:text-white">Our Services</a></li>
+            <li><a href="why-us.html" class="hover:text-white">Why Choose Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Legal Pages</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="pricing.html" class="hover:text-white">Pricing Plans</a></li>
+            <li><a href="documents.html" class="hover:text-white">Documents Required</a></li>
+            <li><a href="compliance.html" class="hover:text-white">Legal &amp; Compliance</a></li>
+            <li><a href="faq.html" class="hover:text-white">FAQs</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Contact</p>
+          <p class="text-sm text-slate-400 mb-1.5">Shivaji Nagar, Pune 411005</p>
+          <p class="text-sm text-slate-400 mb-1.5">+91 00000 00000</p>
+          <p class="text-sm text-slate-400">info@meridianlegal.example</p>
+        </div>
       </div>
     </div>
-  </section>
-
-  <footer class="bg-blue-950 text-white border-t border-blue-900 py-12">
-    <div class="container-content text-center text-sm text-blue-200">
-      <p>© Meridian Legal Consultants. All rights reserved.</p>
+    <div class="text-center text-xs py-5 border-t border-slate-800 text-slate-500">
+      &copy; <span id="year"></span> Meridian Legal Consultants. All rights reserved.
     </div>
   </footer>
+
   <script>
-    document.getElementById('menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    }
   </script>
 </body>
 </html>

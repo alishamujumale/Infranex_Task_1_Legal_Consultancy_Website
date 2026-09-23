@@ -4,87 +4,223 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>How It Works — Meridian Legal Consultants</title>
+  <meta name="description" content="Simple 4-step process to get your registered rent agreement delivered. No office visits, no hassle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-white text-gray-800">
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
-    <div class="container-content flex items-center justify-between h-16 md:h-20">
-      <a href="index.html" class="font-serif text-lg md:text-xl font-bold text-blue-900 tracking-wide flex items-center gap-2">
-        <span class="w-8 h-8 bg-blue-700 text-white rounded flex items-center justify-center font-sans text-sm font-bold">L</span>
-        Meridian Legal
+<body class="bg-white text-slate-800">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="container-content flex items-center justify-between" style="height: 70px;">
+      <a href="index.html" class="flex items-center gap-2.5 no-underline">
+        <span class="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center text-sm font-bold shadow-sm">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </span>
+        <span class="text-xl font-bold text-slate-900 tracking-tight" style="font-family: var(--font-serif);">Meridian Legal</span>
       </a>
-      <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
-        <a href="index.html" class="text-gray-700 hover:text-blue-700">Home</a>
-        <a href="trust.html" class="text-gray-700 hover:text-blue-700">Trust</a>
-        <a href="how-it-works.html" class="text-blue-700 font-bold">How It Works</a>
-        <a href="services.html" class="text-gray-700 hover:text-blue-700">Services</a>
-        <a href="why-us.html" class="text-gray-700 hover:text-blue-700">Why Us</a>
-        <a href="pricing.html" class="text-gray-700 hover:text-blue-700">Pricing</a>
-        <a href="documents.html" class="text-gray-700 hover:text-blue-700">Documents</a>
-        <a href="compliance.html" class="text-gray-700 hover:text-blue-700">Compliance</a>
-        <a href="faq.html" class="text-gray-700 hover:text-blue-700">FAQs</a>
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Home</a>
+        <a href="trust.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Trust</a>
+        <a href="how-it-works.html" class="text-sm font-semibold text-blue-700 px-3.5 py-1.5 rounded-full bg-blue-50">How It Works</a>
+        <a href="services.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Services</a>
+        <a href="why-us.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Why Us</a>
+        <a href="pricing.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Pricing</a>
+        <a href="documents.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Documents</a>
+        <a href="compliance.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Compliance</a>
+        <a href="faq.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">FAQs</a>
+        <a href="contact.html" class="btn-primary ml-3" style="padding: 9px 18px; font-size: 13.5px;">Contact Us</a>
       </nav>
-      <button id="menu-btn" class="lg:hidden p-2 text-blue-900 border border-gray-300 rounded">
+
+      <button id="menu-btn" class="lg:hidden p-2 text-slate-700 border border-slate-300 rounded-lg" aria-label="Open Menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200 bg-white py-4 container-content grid grid-cols-2 gap-2 text-sm">
-      <a href="index.html" class="p-2 border rounded">Home</a>
-      <a href="trust.html" class="p-2 border rounded">Trust & Security</a>
-      <a href="how-it-works.html" class="p-2 border rounded text-blue-700 font-bold bg-blue-50">How It Works</a>
-      <a href="services.html" class="p-2 border rounded">Services</a>
-      <a href="why-us.html" class="p-2 border rounded">Why Us</a>
-      <a href="pricing.html" class="p-2 border rounded">Pricing</a>
-      <a href="documents.html" class="p-2 border rounded">Documents</a>
-      <a href="compliance.html" class="p-2 border rounded">Compliance</a>
-      <a href="faq.html" class="p-2 border rounded">FAQs</a>
-      <a href="contact.html" class="p-2 border rounded bg-blue-700 text-white text-center col-span-2 font-bold">Contact Us</a>
+
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white">
+      <nav class="container-content py-3.5 grid grid-cols-2 gap-2 text-sm">
+        <a href="index.html" class="p-2.5 border rounded-lg text-slate-700">Home</a>
+        <a href="trust.html" class="p-2.5 border rounded-lg text-slate-700">Trust &amp; Security</a>
+        <a href="how-it-works.html" class="p-2.5 border rounded-lg text-blue-700 font-bold bg-blue-50">How It Works</a>
+        <a href="services.html" class="p-2.5 border rounded-lg text-slate-700">Services</a>
+        <a href="why-us.html" class="p-2.5 border rounded-lg text-slate-700">Why Us</a>
+        <a href="pricing.html" class="p-2.5 border rounded-lg text-slate-700">Pricing</a>
+        <a href="documents.html" class="p-2.5 border rounded-lg text-slate-700">Documents</a>
+        <a href="compliance.html" class="p-2.5 border rounded-lg text-slate-700">Compliance</a>
+        <a href="faq.html" class="p-2.5 border rounded-lg text-slate-700">FAQs</a>
+        <a href="contact.html" class="p-2.5 border rounded-lg bg-blue-600 text-white text-center col-span-2 font-bold">Contact Us</a>
+      </nav>
     </div>
   </header>
 
-  <section class="bg-blue-50 py-16 md:py-24 border-b border-blue-100">
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container-content">
+      <span class="badge-pill badge-pill-dark mb-3">
+        <span class="badge-dot"></span>
+        Streamlined 4-Step Flow
+      </span>
+      <h1>How It Works</h1>
+      <p>A simple, hassle-free procedure to draft, verify, and register your rent agreement without ever stepping out of your house.</p>
+    </div>
+  </section>
+
+  <!-- 4-STEP CARDS -->
+  <section class="section-pad bg-slate-50 border-b border-slate-200">
+    <div class="container-content">
+      <div class="section-header">
+        <span class="eyebrow">The Process</span>
+        <h2 class="section-title">Four Steps to Legal Registration</h2>
+        <p class="section-subtitle">We manage drafting, verification, government biometrics, and final delivery on your behalf.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card">
+          <div class="icon-box font-bold text-base" style="font-family: var(--font);">01</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">Enter Details</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Submit the landlord, tenant, property address, and financial terms via our secure online portal or through a consultant.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box font-bold text-base" style="font-family: var(--font);">02</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">Approve Draft</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Our legal team generates the official draft and shares it with you via email or WhatsApp for verification and clause approval.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box font-bold text-base" style="font-family: var(--font);">03</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">Biometrics &amp; E-Sign</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Our field executive arrives at your doorstep for Aadhaar biometric verification, or you can complete an instant remote e-sign.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box font-bold text-base" style="font-family: var(--font);">04</div>
+          <h3 class="font-bold text-lg text-slate-900 mb-2">Receive Agreement</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">The Sub-Registrar approves the submission, and your digitally stamped, legally registered agreement is delivered.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILED BREAKDOWN -->
+  <section class="section-pad bg-white border-b border-slate-200">
+    <div class="container-content" style="max-width: 860px;">
+      <div class="section-header">
+        <span class="eyebrow">Step-by-Step Breakdown</span>
+        <h2 class="section-title">What Happens at Each Stage</h2>
+      </div>
+
+      <div class="space-y-6">
+        <div class="card p-6 flex flex-col md:flex-row gap-6 items-start">
+          <div class="icon-box font-bold text-lg shrink-0">01</div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Information Intake &amp; Document Collection</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-3">You fill in our simple form or send your details over WhatsApp. We collect basic details: owner information, tenant identity, monthly rent, security deposit amount, and agreement duration.</p>
+            <div class="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-md inline-block">Estimated time: 10 minutes</div>
+          </div>
+        </div>
+
+        <div class="card p-6 flex flex-col md:flex-row gap-6 items-start">
+          <div class="icon-box font-bold text-lg shrink-0">02</div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Legal Review &amp; Draft Generation</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-3">Our documentation specialists prepare a customized draft incorporating all statutory covenants under the Maharashtra Rent Control Act. Both parties can review and request edits if required.</p>
+            <div class="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-md inline-block">Estimated time: 1 to 2 hours</div>
+          </div>
+        </div>
+
+        <div class="card p-6 flex flex-col md:flex-row gap-6 items-start">
+          <div class="icon-box font-bold text-lg shrink-0">03</div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Aadhaar Biometric Verification at Doorstep</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-3">A certified executive visits your home or office with a UIDAI-approved biometric fingerprint scanner. Both parties provide biometric verification with their Aadhaar cards without any physical paperwork.</p>
+            <div class="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-md inline-block">Doorstep appointment: As per your preferred slot</div>
+          </div>
+        </div>
+
+        <div class="card p-6 flex flex-col md:flex-row gap-6 items-start">
+          <div class="icon-box font-bold text-lg shrink-0">04</div>
+          <div>
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Government Approval &amp; Registration</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-3">The e-Registration file is submitted to the government Department of Registration and Stamps (IGR Maharashtra). Upon verification by the Sub-Registrar, the official registered certificate is issued.</p>
+            <div class="text-xs font-semibold text-blue-700 bg-blue-50 px-3 py-1.5 rounded-md inline-block">Final delivery: Within 24-48 working hours</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad bg-blue-dark-section">
     <div class="container-content text-center max-w-2xl mx-auto">
-      <span class="eyebrow">4-Step Process</span>
-      <h1 class="font-serif text-3xl md:text-5xl text-blue-950 font-bold mt-3 mb-4">How It Works</h1>
-      <p class="text-gray-600 text-base">Simple, online, hassle-free rent agreement registration process.</p>
-    </div>
-  </section>
-
-  <section class="py-16 bg-white">
-    <div class="container-content grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-      <div class="card">
-        <div class="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4 text-lg">1</div>
-        <h3 class="font-bold text-lg mb-2">Step 1: Form Fill</h3>
-        <p class="text-xs text-gray-600">Provide property address, landlord, and tenant details online.</p>
-      </div>
-      <div class="card">
-        <div class="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4 text-lg">2</div>
-        <h3 class="font-bold text-lg mb-2">Step 2: Draft Approval</h3>
-        <p class="text-xs text-gray-600">Verify draft details and clauses sent via email or WhatsApp.</p>
-      </div>
-      <div class="card">
-        <div class="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4 text-lg">3</div>
-        <h3 class="font-bold text-lg mb-4 text-lg">Step 3: Biometrics</h3>
-        <p class="text-xs text-gray-600">Complete biometric verification at your home with our representative.</p>
-      </div>
-      <div class="card">
-        <div class="w-12 h-12 bg-blue-700 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-4 text-lg">4</div>
-        <h3 class="font-bold text-lg mb-2">Step 4: Registration</h3>
-        <p class="text-xs text-gray-600">Receive government registered agreement PDF copy within 48 hours.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Create Your Agreement?</h2>
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8">Get started online in just a few minutes. Our team will handle the rest.</p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="pricing.html" class="btn-primary" style="background: #ffffff; color: var(--blue-950) !important; border-color: #ffffff;">
+          <span>Choose a Plan</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="contact.html" class="btn-secondary" style="background: transparent; color: #ffffff !important; border-color: rgba(255,255,255,0.4);">
+          <span>Talk to an Expert</span>
+        </a>
       </div>
     </div>
   </section>
 
-  <footer class="bg-blue-950 text-white border-t border-blue-900 py-12">
-    <div class="container-content text-center text-sm text-blue-200">
-      <p>© Meridian Legal Consultants. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer border-t border-slate-800">
+    <div class="container-content py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <p class="text-lg font-bold text-white mb-2" style="font-family: var(--font-serif);">Meridian Legal</p>
+          <p class="text-sm text-slate-400 leading-relaxed">Trusted, government-authorized online rent agreements and documentation consultancy.</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Quick Links</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="trust.html" class="hover:text-white">Trust &amp; Security</a></li>
+            <li><a href="how-it-works.html" class="hover:text-white">How It Works</a></li>
+            <li><a href="services.html" class="hover:text-white">Our Services</a></li>
+            <li><a href="why-us.html" class="hover:text-white">Why Choose Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Legal Pages</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="pricing.html" class="hover:text-white">Pricing Plans</a></li>
+            <li><a href="documents.html" class="hover:text-white">Documents Required</a></li>
+            <li><a href="compliance.html" class="hover:text-white">Legal &amp; Compliance</a></li>
+            <li><a href="faq.html" class="hover:text-white">FAQs</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Contact</p>
+          <p class="text-sm text-slate-400 mb-1.5">Shivaji Nagar, Pune 411005</p>
+          <p class="text-sm text-slate-400 mb-1.5">+91 00000 00000</p>
+          <p class="text-sm text-slate-400">info@meridianlegal.example</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-xs py-5 border-t border-slate-800 text-slate-500">
+      &copy; <span id="year"></span> Meridian Legal Consultants. All rights reserved.
     </div>
   </footer>
+
   <script>
-    document.getElementById('menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    }
   </script>
 </body>
 </html>
-

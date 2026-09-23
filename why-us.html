@@ -4,79 +4,277 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Why Choose Us — Meridian Legal Consultants</title>
+  <meta name="description" content="Discover why thousands of landlords, tenants, and business owners choose Meridian Legal for rent agreements and documentation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-white text-gray-800">
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
-    <div class="container-content flex items-center justify-between h-16 md:h-20">
-      <a href="index.html" class="font-serif text-lg md:text-xl font-bold text-blue-900 tracking-wide flex items-center gap-2">
-        <span class="w-8 h-8 bg-blue-700 text-white rounded flex items-center justify-center font-sans text-sm font-bold">L</span>
-        Meridian Legal
+<body class="bg-white text-slate-800">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="container-content flex items-center justify-between" style="height: 70px;">
+      <a href="index.html" class="flex items-center gap-2.5 no-underline">
+        <span class="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center text-sm font-bold shadow-sm">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </span>
+        <span class="text-xl font-bold text-slate-900 tracking-tight" style="font-family: var(--font-serif);">Meridian Legal</span>
       </a>
-      <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
-        <a href="index.html" class="text-gray-700 hover:text-blue-700">Home</a>
-        <a href="trust.html" class="text-gray-700 hover:text-blue-700">Trust</a>
-        <a href="how-it-works.html" class="text-gray-700 hover:text-blue-700">How It Works</a>
-        <a href="services.html" class="text-gray-700 hover:text-blue-700">Services</a>
-        <a href="why-us.html" class="text-blue-700 font-bold">Why Us</a>
-        <a href="pricing.html" class="text-gray-700 hover:text-blue-700">Pricing</a>
-        <a href="documents.html" class="text-gray-700 hover:text-blue-700">Documents</a>
-        <a href="compliance.html" class="text-gray-700 hover:text-blue-700">Compliance</a>
-        <a href="faq.html" class="text-gray-700 hover:text-blue-700">FAQs</a>
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Home</a>
+        <a href="trust.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Trust</a>
+        <a href="how-it-works.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">How It Works</a>
+        <a href="services.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Services</a>
+        <a href="why-us.html" class="text-sm font-semibold text-blue-700 px-3.5 py-1.5 rounded-full bg-blue-50">Why Us</a>
+        <a href="pricing.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Pricing</a>
+        <a href="documents.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Documents</a>
+        <a href="compliance.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Compliance</a>
+        <a href="faq.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">FAQs</a>
+        <a href="contact.html" class="btn-primary ml-3" style="padding: 9px 18px; font-size: 13.5px;">Contact Us</a>
       </nav>
-      <button id="menu-btn" class="lg:hidden p-2 text-blue-900 border border-gray-300 rounded">
+
+      <button id="menu-btn" class="lg:hidden p-2 text-slate-700 border border-slate-300 rounded-lg" aria-label="Open Menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200 bg-white py-4 container-content grid grid-cols-2 gap-2 text-sm">
-      <a href="index.html" class="p-2 border rounded">Home</a>
-      <a href="trust.html" class="p-2 border rounded">Trust & Security</a>
-      <a href="how-it-works.html" class="p-2 border rounded">How It Works</a>
-      <a href="services.html" class="p-2 border rounded">Services</a>
-      <a href="why-us.html" class="p-2 border rounded text-blue-700 font-bold bg-blue-50">Why Us</a>
-      <a href="pricing.html" class="p-2 border rounded">Pricing</a>
-      <a href="documents.html" class="p-2 border rounded">Documents</a>
-      <a href="compliance.html" class="p-2 border rounded">Compliance</a>
-      <a href="faq.html" class="p-2 border rounded">FAQs</a>
-      <a href="contact.html" class="p-2 border rounded bg-blue-700 text-white text-center col-span-2 font-bold">Contact Us</a>
+
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white">
+      <nav class="container-content py-3.5 grid grid-cols-2 gap-2 text-sm">
+        <a href="index.html" class="p-2.5 border rounded-lg text-slate-700">Home</a>
+        <a href="trust.html" class="p-2.5 border rounded-lg text-slate-700">Trust &amp; Security</a>
+        <a href="how-it-works.html" class="p-2.5 border rounded-lg text-slate-700">How It Works</a>
+        <a href="services.html" class="p-2.5 border rounded-lg text-slate-700">Services</a>
+        <a href="why-us.html" class="p-2.5 border rounded-lg text-blue-700 font-bold bg-blue-50">Why Us</a>
+        <a href="pricing.html" class="p-2.5 border rounded-lg text-slate-700">Pricing</a>
+        <a href="documents.html" class="p-2.5 border rounded-lg text-slate-700">Documents</a>
+        <a href="compliance.html" class="p-2.5 border rounded-lg text-slate-700">Compliance</a>
+        <a href="faq.html" class="p-2.5 border rounded-lg text-slate-700">FAQs</a>
+        <a href="contact.html" class="p-2.5 border rounded-lg bg-blue-600 text-white text-center col-span-2 font-bold">Contact Us</a>
+      </nav>
     </div>
   </header>
 
-  <section class="bg-blue-50 py-16 border-b border-blue-100">
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container-content">
+      <span class="badge-pill badge-pill-dark mb-3">
+        <span class="badge-dot"></span>
+        Excellence &amp; Reliability
+      </span>
+      <h1>Why Choose Us</h1>
+      <p>Discover why over 10,000 property owners, tenants, and commercial partners in Maharashtra rely on our legal documentation services.</p>
+    </div>
+  </section>
+
+  <!-- MAIN COMPARISON SECTION -->
+  <section class="section-pad bg-white border-b border-slate-200">
+    <div class="container-content">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="eyebrow">Our Key Advantages</span>
+          <h2 class="section-title text-left mt-3 mb-4">A Smarter, Faster Way to Handle Legal Agreements</h2>
+          <p class="text-sm text-slate-600 leading-relaxed mb-8">We replace stressful trips to government sub-registrar offices, long queues, and confusing paperwork with a seamless digital-first experience backed by experienced advocates.</p>
+
+          <div class="space-y-5">
+            <div class="flex items-start gap-4">
+              <div class="icon-box-sm mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-slate-900 mb-1">Over 8+ Years of Practice</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Established legal documentation consultancy with an impeccable record across Pune and neighboring districts.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 pt-4 border-t border-slate-200">
+              <div class="icon-box-sm mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-slate-900 mb-1">Doorstep Biometric Service</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">We bring certified biometric devices to your residence or workplace at your scheduled time convenience.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 pt-4 border-t border-slate-200">
+              <div class="icon-box-sm mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-slate-900 mb-1">Zero Hidden Charges</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Completely transparent pricing structure with exact breakdowns of draft fees, stamp duty, and government registration charges.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 pt-4 border-t border-slate-200">
+              <div class="icon-box-sm mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-slate-900 mb-1">24 to 48 Hour Turnaround</h4>
+                <p class="text-sm text-slate-600 leading-relaxed">Expedited government processing ensures you receive your legally registered certificate on schedule.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="overflow-hidden rounded-2xl border border-slate-200">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80&auto=format&fit=crop" alt="Legal Consulting Team" class="w-full object-cover" style="height: 420px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 PILLARS -->
+  <section class="section-pad bg-slate-50 border-b border-slate-200">
+    <div class="container-content">
+      <div class="section-header">
+        <span class="eyebrow">Our Guarantees</span>
+        <h2 class="section-title">The Three Pillars of Our Service</h2>
+        <p class="section-subtitle">Every agreement we prepare is backed by statutory precision, user convenience, and dedicated advocate support.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Legal Accuracy</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Clauses are customized to protect both parties while adhering strictly to the Maharashtra Rent Control Act and the Indian Contract Act.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Complete Privacy</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">We treat your identity and financial records with strict confidentiality, employing encrypted digital workflows and verified field personnel.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 10"></polyline><polyline points="12 18 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Effortless Process</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">From online intake to doorstep biometrics and courier delivery of hard copies, we handle the administrative friction so you can focus on your life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS CONTAINER -->
+  <section class="py-12 bg-white">
+    <div class="container-content">
+      <div class="stats-container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="icon-box-dark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            </div>
+            <div>
+              <div class="stat-number">10K+</div>
+              <div class="stat-label">Agreements Created</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="icon-box-dark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div>
+              <div class="stat-number">99%</div>
+              <div class="stat-label">Customer Satisfaction</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="icon-box-dark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div>
+              <div class="stat-number">24hr</div>
+              <div class="stat-label">Average Delivery</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="icon-box-dark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div>
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Legally Compliant</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad bg-blue-dark-section">
     <div class="container-content text-center max-w-2xl mx-auto">
-      <span class="eyebrow">Proven Experience</span>
-      <h1 class="font-serif text-3xl md:text-5xl text-blue-950 font-bold mt-3 mb-4">Why Choose Meridian Legal?</h1>
-      <p class="text-gray-600 text-base">Dependable legal guidance, doorstep biometric service, and zero hidden costs.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Experience Frictionless Legal Service</h2>
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8">Ready to draft your rent agreement or register your legal documents? Contact our advisors today.</p>
+      <a href="contact.html" class="btn-primary" style="background: #ffffff; color: var(--blue-950) !important; border-color: #ffffff;">
+        <span>Contact Us Now</span>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
   </section>
 
-  <section class="py-16 bg-white">
-    <div class="container-content max-w-3xl mx-auto space-y-6">
-      <div class="card">
-        <h3 class="font-bold text-lg text-blue-900 mb-1">10,000+ Registered Agreements</h3>
-        <p class="text-sm text-gray-600">Over 8 years of trusted legal practice serving thousands of property owners, tenants, and business clients in Pune and Maharashtra.</p>
-      </div>
-      <div class="card">
-        <h3 class="font-bold text-lg text-blue-900 mb-1">Doorstep Biometric Verification</h3>
-        <p class="text-sm text-gray-600">Skip visiting government offices. Our trained executives visit your location to capture digital biometrics conveniently.</p>
-      </div>
-      <div class="card">
-        <h3 class="font-bold text-lg text-blue-900 mb-1">Transparent &amp; All-Inclusive Flat Rates</h3>
-        <p class="text-sm text-gray-600">No surprise costs. All our packages clearly state official government fees, stamp duty, and handling charges up front.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer border-t border-slate-800">
+    <div class="container-content py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <p class="text-lg font-bold text-white mb-2" style="font-family: var(--font-serif);">Meridian Legal</p>
+          <p class="text-sm text-slate-400 leading-relaxed">Trusted, government-authorized online rent agreements and documentation consultancy.</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Quick Links</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="trust.html" class="hover:text-white">Trust &amp; Security</a></li>
+            <li><a href="how-it-works.html" class="hover:text-white">How It Works</a></li>
+            <li><a href="services.html" class="hover:text-white">Our Services</a></li>
+            <li><a href="why-us.html" class="hover:text-white">Why Choose Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Legal Pages</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="pricing.html" class="hover:text-white">Pricing Plans</a></li>
+            <li><a href="documents.html" class="hover:text-white">Documents Required</a></li>
+            <li><a href="compliance.html" class="hover:text-white">Legal &amp; Compliance</a></li>
+            <li><a href="faq.html" class="hover:text-white">FAQs</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Contact</p>
+          <p class="text-sm text-slate-400 mb-1.5">Shivaji Nagar, Pune 411005</p>
+          <p class="text-sm text-slate-400 mb-1.5">+91 00000 00000</p>
+          <p class="text-sm text-slate-400">info@meridianlegal.example</p>
+        </div>
       </div>
     </div>
-  </section>
-
-  <footer class="bg-blue-950 text-white border-t border-blue-900 py-12">
-    <div class="container-content text-center text-sm text-blue-200">
-      <p>© Meridian Legal Consultants. All rights reserved.</p>
+    <div class="text-center text-xs py-5 border-t border-slate-800 text-slate-500">
+      &copy; <span id="year"></span> Meridian Legal Consultants. All rights reserved.
     </div>
   </footer>
+
   <script>
-    document.getElementById('menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    }
   </script>
 </body>
 </html>
-

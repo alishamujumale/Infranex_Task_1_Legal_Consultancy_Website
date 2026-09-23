@@ -4,111 +4,262 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — Meridian Legal Consultants</title>
+  <meta name="description" content="Get in touch with Meridian Legal Consultants in Pune. Schedule doorstep biometric registration or request document assistance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-white text-gray-800">
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
-    <div class="container-content flex items-center justify-between h-16 md:h-20">
-      <a href="index.html" class="font-serif text-lg md:text-xl font-bold text-blue-900 tracking-wide flex items-center gap-2">
-        <span class="w-8 h-8 bg-blue-700 text-white rounded flex items-center justify-center font-sans text-sm font-bold">L</span>
-        Meridian Legal
+<body class="bg-white text-slate-800">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="container-content flex items-center justify-between" style="height: 70px;">
+      <a href="index.html" class="flex items-center gap-2.5 no-underline">
+        <span class="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center text-sm font-bold shadow-sm">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </span>
+        <span class="text-xl font-bold text-slate-900 tracking-tight" style="font-family: var(--font-serif);">Meridian Legal</span>
       </a>
-      <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
-        <a href="index.html" class="text-gray-700 hover:text-blue-700">Home</a>
-        <a href="trust.html" class="text-gray-700 hover:text-blue-700">Trust</a>
-        <a href="how-it-works.html" class="text-gray-700 hover:text-blue-700">How It Works</a>
-        <a href="services.html" class="text-gray-700 hover:text-blue-700">Services</a>
-        <a href="why-us.html" class="text-gray-700 hover:text-blue-700">Why Us</a>
-        <a href="pricing.html" class="text-gray-700 hover:text-blue-700">Pricing</a>
-        <a href="documents.html" class="text-gray-700 hover:text-blue-700">Documents</a>
-        <a href="compliance.html" class="text-gray-700 hover:text-blue-700">Compliance</a>
-        <a href="faq.html" class="text-gray-700 hover:text-blue-700">FAQs</a>
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Home</a>
+        <a href="trust.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Trust</a>
+        <a href="how-it-works.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">How It Works</a>
+        <a href="services.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Services</a>
+        <a href="why-us.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Why Us</a>
+        <a href="pricing.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Pricing</a>
+        <a href="documents.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Documents</a>
+        <a href="compliance.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Compliance</a>
+        <a href="faq.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">FAQs</a>
+        <a href="contact.html" class="btn-primary ml-3" style="padding: 9px 18px; font-size: 13.5px; background: var(--blue-700);">Contact Us</a>
       </nav>
-      <button id="menu-btn" class="lg:hidden p-2 text-blue-900 border border-gray-300 rounded">
+
+      <button id="menu-btn" class="lg:hidden p-2 text-slate-700 border border-slate-300 rounded-lg" aria-label="Open Menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200 bg-white py-4 container-content grid grid-cols-2 gap-2 text-sm">
-      <a href="index.html" class="p-2 border rounded">Home</a>
-      <a href="trust.html" class="p-2 border rounded">Trust & Security</a>
-      <a href="how-it-works.html" class="p-2 border rounded">How It Works</a>
-      <a href="services.html" class="p-2 border rounded">Services</a>
-      <a href="why-us.html" class="p-2 border rounded">Why Us</a>
-      <a href="pricing.html" class="p-2 border rounded">Pricing</a>
-      <a href="documents.html" class="p-2 border rounded">Documents</a>
-      <a href="compliance.html" class="p-2 border rounded">Compliance</a>
-      <a href="faq.html" class="p-2 border rounded">FAQs</a>
-      <a href="contact.html" class="p-2 border rounded bg-blue-700 text-white text-center col-span-2 font-bold">Contact Us</a>
+
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white">
+      <nav class="container-content py-3.5 grid grid-cols-2 gap-2 text-sm">
+        <a href="index.html" class="p-2.5 border rounded-lg text-slate-700">Home</a>
+        <a href="trust.html" class="p-2.5 border rounded-lg text-slate-700">Trust &amp; Security</a>
+        <a href="how-it-works.html" class="p-2.5 border rounded-lg text-slate-700">How It Works</a>
+        <a href="services.html" class="p-2.5 border rounded-lg text-slate-700">Services</a>
+        <a href="why-us.html" class="p-2.5 border rounded-lg text-slate-700">Why Us</a>
+        <a href="pricing.html" class="p-2.5 border rounded-lg text-slate-700">Pricing</a>
+        <a href="documents.html" class="p-2.5 border rounded-lg text-slate-700">Documents</a>
+        <a href="compliance.html" class="p-2.5 border rounded-lg text-slate-700">Compliance</a>
+        <a href="faq.html" class="p-2.5 border rounded-lg text-slate-700">FAQs</a>
+        <a href="contact.html" class="p-2.5 border rounded-lg bg-blue-600 text-white text-center col-span-2 font-bold">Contact Us</a>
+      </nav>
     </div>
   </header>
 
-  <section class="bg-blue-900 text-white py-16">
-    <div class="container-content text-center max-w-2xl mx-auto">
-      <span class="eyebrow bg-blue-800 text-white border-blue-700">Final CTA &amp; Support</span>
-      <h1 class="font-serif text-3xl md:text-5xl text-white font-bold mt-3 mb-4">Contact Meridian Legal</h1>
-      <p class="text-blue-200 text-base">Get in touch with our Pune legal team for fast documentation assistance.</p>
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container-content">
+      <span class="badge-pill badge-pill-dark mb-3">
+        <span class="badge-dot"></span>
+        Direct Support
+      </span>
+      <h1>Contact Us</h1>
+      <p>Speak with our legal documentation advisors in Pune. Schedule doorstep appointments or ask any procedural questions.</p>
     </div>
   </section>
 
-  <section class="py-16 bg-white">
-    <div class="container-content grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div>
-        <h2 class="font-serif text-2xl text-blue-950 font-bold mb-4">Office &amp; Contact Information</h2>
-        <div class="space-y-4 text-sm text-gray-700 mb-8">
-          <div class="p-4 border border-gray-300 rounded">
-            <strong>📍 Office Address:</strong><br>
-            123 Legal Street, Shivaji Nagar, Pune, Maharashtra 411005
-          </div>
-          <div class="p-4 border border-gray-300 rounded">
-            <strong>📞 Phone &amp; WhatsApp:</strong><br>
-            +91 00000 00000 (Mon – Sat: 9:00 AM – 7:00 PM)
-          </div>
-          <div class="p-4 border border-gray-300 rounded">
-            <strong>✉️ Email:</strong><br>
-            info@meridianlegal.example
+  <!-- CONTACT GRID -->
+  <section class="section-pad bg-slate-50 border-b border-slate-200">
+    <div class="container-content">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Contact Details -->
+        <div>
+          <span class="eyebrow">Reach Out</span>
+          <h2 class="section-title text-left mt-3 mb-4">Connect With Our Legal Documentation Office</h2>
+          <p class="text-sm text-slate-600 leading-relaxed mb-8">Our advisors respond to all queries within 2 to 3 business hours. For immediate bookings, call our office directly.</p>
+
+          <div class="space-y-4">
+            <div class="card flex items-start gap-4 p-5">
+              <div class="icon-box-sm mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-slate-900 mb-0.5">Office Address</h4>
+                <p class="text-sm text-slate-600">123 Legal Street, Shivaji Nagar, Pune, Maharashtra 411005</p>
+              </div>
+            </div>
+
+            <div class="card flex items-start gap-4 p-5">
+              <div class="icon-box-sm mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-slate-900 mb-0.5">Phone Number</h4>
+                <p class="text-sm text-slate-600">+91 00000 00000</p>
+              </div>
+            </div>
+
+            <div class="card flex items-start gap-4 p-5">
+              <div class="icon-box-sm mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-slate-900 mb-0.5">Email Inquiries</h4>
+                <p class="text-sm text-slate-600">info@meridianlegal.example</p>
+              </div>
+            </div>
+
+            <div class="card flex items-start gap-4 p-5">
+              <div class="icon-box-sm mt-0.5">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <h4 class="font-bold text-base text-slate-900 mb-0.5">Business Hours</h4>
+                <p class="text-sm text-slate-600">Monday — Saturday: 9:00 AM to 7:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="card">
-        <h2 class="font-serif text-xl font-bold text-blue-950 mb-4">Send An Inquiry</h2>
-        <form id="contact-form" action="/api/contact" method="POST" class="space-y-4">
-          <div>
-            <label class="block text-xs font-bold text-gray-700 mb-1">Full Name *</label>
-            <input type="text" name="name" required class="w-full p-2.5 border border-gray-300 rounded text-sm outline-none" placeholder="Your Name">
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-gray-700 mb-1">Phone Number *</label>
-            <input type="tel" name="phone" required class="w-full p-2.5 border border-gray-300 rounded text-sm outline-none" placeholder="+91 00000 00000">
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-gray-700 mb-1">Select Service *</label>
-            <select name="service" class="w-full p-2.5 border border-gray-300 rounded text-sm outline-none">
-              <option>Rent Agreement Registration</option>
-              <option>Aadhaar Card Service</option>
-              <option>Legal Documentation / Affidavit</option>
-              <option>General Legal Consultation</option>
-            </select>
-          </div>
-          <div>
-            <label class="block text-xs font-bold text-gray-700 mb-1">Message</label>
-            <textarea name="message" rows="3" class="w-full p-2.5 border border-gray-300 rounded text-sm outline-none" placeholder="Details..."></textarea>
-          </div>
-          <button type="submit" class="btn-primary w-full text-center">Submit Message</button>
-        </form>
+        <!-- Contact Form -->
+        <div class="card p-8">
+          <h3 class="font-bold text-2xl text-slate-900 mb-2">Send an Inquiry</h3>
+          <p class="text-sm text-slate-600 mb-6">Fill in your requirements below and our team will get back to you promptly.</p>
+
+          <form id="contact-form" action="/api/contact" method="POST" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">First Name *</label>
+                <input type="text" name="first_name" required class="form-input" placeholder="First Name">
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">Last Name</label>
+                <input type="text" name="last_name" class="form-input" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Email Address *</label>
+              <input type="email" name="email" required class="form-input" placeholder="you@company.com">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Phone Number *</label>
+              <input type="tel" name="phone" required class="form-input" placeholder="+91 00000 00000">
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Service Required *</label>
+              <select name="service" class="form-input">
+                <option>Rent Agreement Registration</option>
+                <option>Aadhaar Card Service</option>
+                <option>Legal Documentation / Affidavit</option>
+                <option>Power of Attorney</option>
+                <option>Notary Services</option>
+                <option>General Legal Consultation</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1.5">Message</label>
+              <textarea name="message" rows="4" class="form-input" placeholder="Tell us about your property location, tenancy term, or specific requirements..."></textarea>
+            </div>
+
+            <div id="form-msg" style="display: none; padding: 12px; border-radius: 8px; font-size: 13.5px; font-weight: 500;"></div>
+
+            <button type="submit" class="btn-primary w-full text-center">
+              <span>Send Message</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-blue-950 text-white border-t border-blue-900 py-12">
-    <div class="container-content text-center text-sm text-blue-200">
-      <p>© Meridian Legal Consultants. All rights reserved.</p>
+  <!-- FOOTER -->
+  <footer class="site-footer border-t border-slate-800">
+    <div class="container-content py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <p class="text-lg font-bold text-white mb-2" style="font-family: var(--font-serif);">Meridian Legal</p>
+          <p class="text-sm text-slate-400 leading-relaxed">Trusted, government-authorized online rent agreements and documentation consultancy.</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Quick Links</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="trust.html" class="hover:text-white">Trust &amp; Security</a></li>
+            <li><a href="how-it-works.html" class="hover:text-white">How It Works</a></li>
+            <li><a href="services.html" class="hover:text-white">Our Services</a></li>
+            <li><a href="why-us.html" class="hover:text-white">Why Choose Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Legal Pages</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="pricing.html" class="hover:text-white">Pricing Plans</a></li>
+            <li><a href="documents.html" class="hover:text-white">Documents Required</a></li>
+            <li><a href="compliance.html" class="hover:text-white">Legal &amp; Compliance</a></li>
+            <li><a href="faq.html" class="hover:text-white">FAQs</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Contact</p>
+          <p class="text-sm text-slate-400 mb-1.5">Shivaji Nagar, Pune 411005</p>
+          <p class="text-sm text-slate-400 mb-1.5">+91 00000 00000</p>
+          <p class="text-sm text-slate-400">info@meridianlegal.example</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-xs py-5 border-t border-slate-800 text-slate-500">
+      &copy; <span id="year"></span> Meridian Legal Consultants. All rights reserved.
     </div>
   </footer>
+
   <script>
-    document.getElementById('menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    }
+
+    const form = document.getElementById('contact-form');
+    const formMsg = document.getElementById('form-msg');
+    if (form) {
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.innerHTML = '<span>Sending...</span>';
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(Object.fromEntries(new FormData(form)))
+          });
+          if (res.ok) {
+            formMsg.style.display = 'block';
+            formMsg.style.background = '#dcfce7';
+            formMsg.style.color = '#166534';
+            formMsg.textContent = 'Message sent successfully! Our team will contact you within 2–3 hours.';
+            form.reset();
+          } else {
+            throw new Error();
+          }
+        } catch {
+          formMsg.style.display = 'block';
+          formMsg.style.background = '#fee2e2';
+          formMsg.style.color = '#991b1b';
+          formMsg.textContent = 'Something went wrong. Please call us directly at +91 00000 00000.';
+        }
+        submitBtn.innerHTML = '<span>Send Message</span><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+      });
+    }
   </script>
 </body>
 </html>

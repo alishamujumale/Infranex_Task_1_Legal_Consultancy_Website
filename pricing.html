@@ -4,103 +4,288 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pricing Plans — Meridian Legal Consultants</title>
+  <meta name="description" content="Transparent, fixed pricing for online rent agreements and documentation in Maharashtra. No hidden charges.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-white text-gray-800">
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
-    <div class="container-content flex items-center justify-between h-16 md:h-20">
-      <a href="index.html" class="font-serif text-lg md:text-xl font-bold text-blue-900 tracking-wide flex items-center gap-2">
-        <span class="w-8 h-8 bg-blue-700 text-white rounded flex items-center justify-center font-sans text-sm font-bold">L</span>
-        Meridian Legal
+<body class="bg-white text-slate-800">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="container-content flex items-center justify-between" style="height: 70px;">
+      <a href="index.html" class="flex items-center gap-2.5 no-underline">
+        <span class="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center text-sm font-bold shadow-sm">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </span>
+        <span class="text-xl font-bold text-slate-900 tracking-tight" style="font-family: var(--font-serif);">Meridian Legal</span>
       </a>
-      <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
-        <a href="index.html" class="text-gray-700 hover:text-blue-700">Home</a>
-        <a href="trust.html" class="text-gray-700 hover:text-blue-700">Trust</a>
-        <a href="how-it-works.html" class="text-gray-700 hover:text-blue-700">How It Works</a>
-        <a href="services.html" class="text-gray-700 hover:text-blue-700">Services</a>
-        <a href="why-us.html" class="text-gray-700 hover:text-blue-700">Why Us</a>
-        <a href="pricing.html" class="text-blue-700 font-bold">Pricing</a>
-        <a href="documents.html" class="text-gray-700 hover:text-blue-700">Documents</a>
-        <a href="compliance.html" class="text-gray-700 hover:text-blue-700">Compliance</a>
-        <a href="faq.html" class="text-gray-700 hover:text-blue-700">FAQs</a>
-        <a href="contact.html" class="btn-primary">Contact Us</a>
+
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="index.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Home</a>
+        <a href="trust.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Trust</a>
+        <a href="how-it-works.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">How It Works</a>
+        <a href="services.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Services</a>
+        <a href="why-us.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Why Us</a>
+        <a href="pricing.html" class="text-sm font-semibold text-blue-700 px-3.5 py-1.5 rounded-full bg-blue-50">Pricing</a>
+        <a href="documents.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Documents</a>
+        <a href="compliance.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">Compliance</a>
+        <a href="faq.html" class="text-sm font-medium text-slate-600 px-3.5 py-1.5 rounded-full hover:bg-slate-100">FAQs</a>
+        <a href="contact.html" class="btn-primary ml-3" style="padding: 9px 18px; font-size: 13.5px;">Contact Us</a>
       </nav>
-      <button id="menu-btn" class="lg:hidden p-2 text-blue-900 border border-gray-300 rounded">
+
+      <button id="menu-btn" class="lg:hidden p-2 text-slate-700 border border-slate-300 rounded-lg" aria-label="Open Menu">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-200 bg-white py-4 container-content grid grid-cols-2 gap-2 text-sm">
-      <a href="index.html" class="p-2 border rounded">Home</a>
-      <a href="trust.html" class="p-2 border rounded">Trust & Security</a>
-      <a href="how-it-works.html" class="p-2 border rounded">How It Works</a>
-      <a href="services.html" class="p-2 border rounded">Services</a>
-      <a href="why-us.html" class="p-2 border rounded">Why Us</a>
-      <a href="pricing.html" class="p-2 border rounded text-blue-700 font-bold bg-blue-50">Pricing</a>
-      <a href="documents.html" class="p-2 border rounded">Documents</a>
-      <a href="compliance.html" class="p-2 border rounded">Compliance</a>
-      <a href="faq.html" class="p-2 border rounded">FAQs</a>
-      <a href="contact.html" class="p-2 border rounded bg-blue-700 text-white text-center col-span-2 font-bold">Contact Us</a>
+
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white">
+      <nav class="container-content py-3.5 grid grid-cols-2 gap-2 text-sm">
+        <a href="index.html" class="p-2.5 border rounded-lg text-slate-700">Home</a>
+        <a href="trust.html" class="p-2.5 border rounded-lg text-slate-700">Trust &amp; Security</a>
+        <a href="how-it-works.html" class="p-2.5 border rounded-lg text-slate-700">How It Works</a>
+        <a href="services.html" class="p-2.5 border rounded-lg text-slate-700">Services</a>
+        <a href="why-us.html" class="p-2.5 border rounded-lg text-slate-700">Why Us</a>
+        <a href="pricing.html" class="p-2.5 border rounded-lg text-blue-700 font-bold bg-blue-50">Pricing</a>
+        <a href="documents.html" class="p-2.5 border rounded-lg text-slate-700">Documents</a>
+        <a href="compliance.html" class="p-2.5 border rounded-lg text-slate-700">Compliance</a>
+        <a href="faq.html" class="p-2.5 border rounded-lg text-slate-700">FAQs</a>
+        <a href="contact.html" class="p-2.5 border rounded-lg bg-blue-600 text-white text-center col-span-2 font-bold">Contact Us</a>
+      </nav>
     </div>
   </header>
 
-  <section class="bg-blue-50 py-16 border-b border-blue-100">
+  <!-- PAGE BANNER -->
+  <section class="page-banner">
+    <div class="container-content">
+      <span class="badge-pill badge-pill-dark mb-3">
+        <span class="badge-dot"></span>
+        Upfront &amp; Transparent
+      </span>
+      <h1>Pricing Plans</h1>
+      <p>Fixed legal packages with clear breakdowns. No surprise surcharges or hidden administrative fees.</p>
+    </div>
+  </section>
+
+  <!-- PRICING CARDS -->
+  <section class="section-pad bg-slate-50 border-b border-slate-200">
+    <div class="container-content">
+      <div class="section-header">
+        <span class="eyebrow">Clear Packages</span>
+        <h2 class="section-title">Select the Plan that Fits Your Needs</h2>
+        <p class="section-subtitle">Stamp duty and statutory government registration charges apply based on tenancy rent and deposit according to IGR Maharashtra calculation tables.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Standard -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-xl text-slate-900 mb-1">Standard Rental</h3>
+            <p class="text-xs text-slate-500 mb-5">11-Month Residential Tenancies</p>
+            <div class="text-3xl font-extrabold text-blue-900 mb-6" style="font-family: var(--font);">
+              ₹999 <span class="text-xs font-normal text-slate-500">+ govt charges</span>
+            </div>
+            <ul class="text-sm space-y-3 mb-8 text-slate-600">
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Statutory Draft Generation</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Online Identity Verification</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Softcopy PDF Delivery via Email</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>WhatsApp Customer Support</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-secondary w-full text-center">Select Standard</a>
+        </div>
+
+        <!-- Doorstep Executive (Popular) -->
+        <div class="card border-2 border-blue-600 relative flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[11px] font-bold tracking-wider uppercase px-3 py-0.5 rounded-full">
+              Most Popular
+            </div>
+            <h3 class="font-bold text-xl text-slate-900 mt-2 mb-1">Doorstep Executive</h3>
+            <p class="text-xs text-slate-500 mb-5">Complete Registration with Biometrics</p>
+            <div class="text-3xl font-extrabold text-blue-900 mb-6" style="font-family: var(--font);">
+              ₹1,999 <span class="text-xs font-normal text-slate-500">+ govt charges</span>
+            </div>
+            <ul class="text-sm space-y-3 mb-8 text-slate-600">
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Everything in Standard</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Doorstep Executive Visit</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Biometric Scanner at Home/Office</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Police Intimation Submission</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Hardcopy Courier Delivery</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-primary w-full text-center">Select Executive</a>
+        </div>
+
+        <!-- Commercial Lease -->
+        <div class="card flex flex-col justify-between">
+          <div>
+            <h3 class="font-bold text-xl text-slate-900 mb-1">Commercial Lease</h3>
+            <p class="text-xs text-slate-500 mb-5">Office, Retail &amp; Warehouse Leases</p>
+            <div class="text-3xl font-extrabold text-blue-900 mb-6" style="font-family: var(--font);">
+              ₹3,499 <span class="text-xs font-normal text-slate-500">+ govt charges</span>
+            </div>
+            <ul class="text-sm space-y-3 mb-8 text-slate-600">
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Custom Commercial Clause Drafting</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Multi-Year Lease Term Support</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Advocate Title &amp; Document Review</span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span class="icon-box-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <span>Corporate GST Invoice Included</span>
+              </li>
+            </ul>
+          </div>
+          <a href="contact.html" class="btn-secondary w-full text-center">Select Commercial</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INCLUDED IN EVERY PLAN -->
+  <section class="section-pad bg-white border-b border-slate-200">
+    <div class="container-content">
+      <div class="section-header">
+        <span class="eyebrow">Standard Inclusions</span>
+        <h2 class="section-title">What Is Included in Every Plan</h2>
+        <p class="section-subtitle">No matter which package you choose, you receive core legal safeguards and professional support.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 mb-2">IGR Compliant Draft</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Standard legal structure fulfilling Section 55 requirements under Maharashtra Rent Control Act.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 mb-2">Advocate Review</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Every agreement draft is reviewed by our legal team before submission to the Sub-Registrar.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 mb-2">Encrypted Storage</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Your Aadhaar identity data and signed agreements are stored with 256-bit digital security.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 mb-2">Priority Delivery</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">Prompt filing and expedited processing to ensure your agreement is issued without delays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad bg-blue-dark-section">
     <div class="container-content text-center max-w-2xl mx-auto">
-      <span class="eyebrow">Flat &amp; Transparent Fees</span>
-      <h1 class="font-serif text-3xl md:text-5xl text-blue-950 font-bold mt-3 mb-4">Pricing Plans</h1>
-      <p class="text-gray-600 text-base">Select the documentation package that best suits your agreement needs.</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Need Custom Clause Drafting?</h2>
+      <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8">Have specialized commercial or long-term lease terms? Get in touch with our senior legal consultants for a customized fee quotation.</p>
+      <a href="contact.html" class="btn-primary" style="background: #ffffff; color: var(--blue-950) !important; border-color: #ffffff;">
+        <span>Request Custom Quote</span>
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
   </section>
 
-  <section class="py-16 bg-white">
-    <div class="container-content grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="card">
-        <h3 class="font-bold text-lg text-gray-900 mb-1">Standard Rental</h3>
-        <p class="text-xs text-gray-500 mb-4">11 Month Residential Agreement</p>
-        <div class="text-3xl font-bold text-blue-900 mb-4">₹999 <span class="text-xs font-normal text-gray-500">+ Govt Duty</span></div>
-        <ul class="text-xs space-y-2 text-gray-600 mb-6">
-          <li>✓ Legal Draft Generation</li>
-          <li>✓ Online Identity Verification</li>
-          <li>✓ Registered PDF Email Delivery</li>
-        </ul>
-        <a href="contact.html" class="btn-secondary w-full text-center">Get Started</a>
-      </div>
-
-      <div class="card border-2 border-blue-700 bg-white">
-        <span class="bg-blue-700 text-white text-xs font-bold px-2 py-0.5 rounded uppercase">Most Popular</span>
-        <h3 class="font-bold text-lg text-gray-900 mt-2 mb-1">Doorstep Biometric</h3>
-        <p class="text-xs text-gray-500 mb-4">Complete Registration &amp; Home Visit</p>
-        <div class="text-3xl font-bold text-blue-900 mb-4">₹1,999 <span class="text-xs font-normal text-gray-500">+ Govt Duty</span></div>
-        <ul class="text-xs space-y-2 text-gray-600 mb-6">
-          <li>✓ Everything in Standard</li>
-          <li>✓ Executive Visit for Biometric</li>
-          <li>✓ Police Intimation Submission</li>
-          <li>✓ Hardcopy Courier Delivery</li>
-        </ul>
-        <a href="contact.html" class="btn-primary w-full text-center">Get Started</a>
-      </div>
-
-      <div class="card">
-        <h3 class="font-bold text-lg text-gray-900 mb-1">Commercial Lease</h3>
-        <p class="text-xs text-gray-500 mb-4">Office &amp; Retail Space</p>
-        <div class="text-3xl font-bold text-blue-900 mb-4">₹3,499 <span class="text-xs font-normal text-gray-500">+ Govt Duty</span></div>
-        <ul class="text-xs space-y-2 text-gray-600 mb-6">
-          <li>✓ Custom Clause Drafting</li>
-          <li>✓ Multi-Year Registration</li>
-          <li>✓ Advocate Consultation</li>
-        </ul>
-        <a href="contact.html" class="btn-secondary w-full text-center">Get Started</a>
+  <!-- FOOTER -->
+  <footer class="site-footer border-t border-slate-800">
+    <div class="container-content py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <p class="text-lg font-bold text-white mb-2" style="font-family: var(--font-serif);">Meridian Legal</p>
+          <p class="text-sm text-slate-400 leading-relaxed">Trusted, government-authorized online rent agreements and documentation consultancy.</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Quick Links</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="trust.html" class="hover:text-white">Trust &amp; Security</a></li>
+            <li><a href="how-it-works.html" class="hover:text-white">How It Works</a></li>
+            <li><a href="services.html" class="hover:text-white">Our Services</a></li>
+            <li><a href="why-us.html" class="hover:text-white">Why Choose Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Legal Pages</p>
+          <ul class="space-y-2 text-sm text-slate-400">
+            <li><a href="pricing.html" class="hover:text-white">Pricing Plans</a></li>
+            <li><a href="documents.html" class="hover:text-white">Documents Required</a></li>
+            <li><a href="compliance.html" class="hover:text-white">Legal &amp; Compliance</a></li>
+            <li><a href="faq.html" class="hover:text-white">FAQs</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-wider mb-3 text-slate-500">Contact</p>
+          <p class="text-sm text-slate-400 mb-1.5">Shivaji Nagar, Pune 411005</p>
+          <p class="text-sm text-slate-400 mb-1.5">+91 00000 00000</p>
+          <p class="text-sm text-slate-400">info@meridianlegal.example</p>
+        </div>
       </div>
     </div>
-  </section>
-
-  <footer class="bg-blue-950 text-white border-t border-blue-900 py-12">
-    <div class="container-content text-center text-sm text-blue-200">
-      <p>© Meridian Legal Consultants. All rights reserved.</p>
+    <div class="text-center text-xs py-5 border-t border-slate-800 text-slate-500">
+      &copy; <span id="year"></span> Meridian Legal Consultants. All rights reserved.
     </div>
   </footer>
+
   <script>
-    document.getElementById('menu-btn').addEventListener('click', () => document.getElementById('mobile-menu').classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    }
   </script>
 </body>
 </html>
